@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <meta name="format-detection" content="telephone=no">
+    
+    <title>한우-개체정보</title>
+    <link href="css/style.css" rel="stylesheet">
+    <!-- javaScript  -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/common.js"></script>
+
+
+    <!-- 확인용 임시 스크립트, 개발자가 변경 바랍니다. -->
+    <script>
+        $(document).ready(function() {
+
+            $("section.list-object tbody tr").on("click", function(){
+                $("article.popup-object").toggleClass("show");
+            });
+
+
+            $("article.popup-object .close").on("click", function(){
+                $("article.popup-object").toggleClass("show");
+            });
+
+        });
+    </script>
+    <!--//  확인용 임시 스크립트, 개발자가 변경 바랍니다. -->
+
+    
+</head>
+
+<body>
+
+    <div id="content">
+        <article class="search">
+                <h1 class="sr-only">검색</h2>
+
+                    <fieldset>
+                        <legend class="sr-only">검색 입력폼</legend>
+
+                        <input class="txt" type="text" placeholder="검색어를 입력하세요">
+                        <button>조회</button>
+
+                    </fieldset>
+
+
+
+        </article>
+
+        <section class="list-object">
+                <h1>홍길동목장<small>215325</small></h1>
+                <div class="counter">
+                    전체<strong>(50)</strong>
+
+                    <fieldset>
+                        <legend class="sr-only">조회 입력폼</legend>
+
+                        <input class="txt" type="text" placeholder="0">
+                        년 이상
+                        <input class="txt" type="text" placeholder="0">
+                        년 미만
+                        <button>조회</button>
+
+                    </fieldset>
+                    
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>개체식별번호</th>
+                            <th>출생일</th>
+                            <th>개월수</th>
+                            <th>성별</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                002 3654 <u>1128</u> 1
+                            </td>
+                            <td>
+                                15.05.30
+                            </td>
+                            <td><strong>3년 8개월</strong></td>
+                            <td>암</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                002 3654 <u>1128</u> 1
+                            </td>
+                            <td>
+                                15.05.30
+                            </td>
+                            <td><strong>3년 8개월</strong></td>
+                            <td>암</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                002 3654 <u>1128</u> 1
+                            </td>
+                            <td>
+                                15.05.30
+                            </td>
+                            <td><strong>3년 8개월</strong></td>
+                            <td>암</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                002 3654 <u>1128</u> 1
+                            </td>
+                            <td>
+                                15.05.30
+                            </td>
+                            <td><strong>3년 8개월</strong></td>
+                            <td>암</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                002 3654 <u>1128</u> 1
+                            </td>
+                            <td>
+                                15.05.30
+                            </td>
+                            <td><strong>3년 8개월</strong></td>
+                            <td>암</td>
+                        </tr>
+
+
+
+                    </tbody>
+                </table>
+
+                <button class="more"><i class="icon-angle-down"></i>15개 더보기 <span>( 6 / 30 )</span></button>
+                <button class="toTop"><i class="icon-icon-top"></i>최상단으로바로가기</button>
+
+        </section>
+        <article class="popup-object">
+
+            <div class="outline">
+                <h1>기본정보</h1>
+
+                <table class="type01">
+                    <tbody>
+                        <tr>
+                            <th>개체식별번호</th>
+                            <td colspan="3" class="nums">
+                                002 3614 <u>8542</u> 7
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>생년월일<span>(개월수)</span></th>
+                            <td class="birth">15.10.24 <span>(3년 2개월)</span></td>
+                            <th>성별</th>
+                            <td>암</td>
+                        </tr>
+                        <tr>
+                            <th>아비번호</th>
+                            <td colspan="3" class="kpn">
+                                KPN<span>802</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>어미개체<span>식별번호</span></th>
+                            <td colspan="3" class="nums">
+                                    002 3614 <u>8542</u> 7
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+                <h2>3대 혈통정보</h2>
+
+                <table class="type02">
+                    <thead>
+                        <tr>
+                            <th colspan="2">구분</th>
+                            <th>아비번호 / 어미개체식별번호</th>
+                            <th>생년월일</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">부계</th>
+                            <td>
+                                부
+                            </td>
+                            <td class="kpn">
+                                KPN<span>3502</span>
+                            </td>
+                            <td>
+                               12.05.14
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                조부
+                            </td>
+                            <td class="kpn">
+                                KPN<span>806</span>
+                            </td>
+                            <td>
+                               09.08.31
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                조모
+                            </td>
+                            <td class="nums">
+                                002 3614 <u>8542</u> 7
+                            </td>
+                            <td>
+                               09.08.31
+                            </td>
+                        </tr>
+
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>모계</th>
+                            <td>
+                                모
+                            </td>
+                            <td class="nums">
+                                002 3614 <u>8542</u> 7
+                            </td>
+                            <td>
+                               12.05.14
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+                <h2>수신정보</h2>
+
+                <table class="type02">
+                    <thead>
+                        <tr>
+                            <th>산차</th>
+                            <th>수정<span>횟수</span></th>
+                            <th>발정일<span>수정일</span></th>
+                            <th>근친계수</th>
+                            <th>KPN</th>
+                            <th>수정사</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</th>
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                <p>18.09.24</p>
+                                <p>18.09.30</p>
+                            </td>
+                            <td>
+                               0.125
+                            </td>
+                            <td>
+                                KPN<span>3468</span>
+                            </td>
+                            <td>
+                               김경민
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+                <button class="close"><i class="icon-close"></i>닫기</button>
+
+            </div>
+        </article>
+    </div>
+
+</body>
+
+</html>

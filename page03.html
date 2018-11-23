@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <meta name="format-detection" content="telephone=no">
+    
+    <title>한우-정액정보</title>
+    <link href="css/style.css" rel="stylesheet">
+    <!-- javaScript  -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/common.js"></script>
+
+
+    <!-- 확인용 임시 스크립트, 개발자가 변경 바랍니다. -->
+    <script>
+        $(document).ready(function() {
+
+            $("section.list-kpn tbody tr").on("click", function(){
+                $("article.popup-kpn").toggleClass("show");
+            });
+
+
+            $("article.popup-kpn .close").on("click", function(){
+                $("article.popup-kpn").toggleClass("show");
+            });
+
+        });
+    </script>
+    <!--//  확인용 임시 스크립트, 개발자가 변경 바랍니다. -->
+
+    
+</head>
+
+<body>
+
+    <div id="content">
+        <article class="search-kpn">
+                <h1 class="sr-only">KPN검색</h2>
+
+                    <fieldset>
+                        <legend class="sr-only">검색 입력폼</legend>
+
+                        <select class="selectbox">
+                            <option>구입일자</option>
+                            <option>값1</option>
+                            <option>값2</option>
+                        </select>
+
+
+                        <input class="date" type="date">
+                        <span>~</span>
+                        <input class="date" type="date">
+
+
+                        <input class="txt" type="text" placeholder="KPN 번호를 입력하세요">
+                        <button>조회</button>
+
+                    </fieldset>
+
+
+
+        </article>
+
+        <section class="list-kpn">
+                <h1 class="sr-only">테이블형 리스트</h1>
+                <div class="counter">
+                    전체<strong>(50)</strong>
+
+
+                    
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>KPN번호</th>
+                            <th>구입일자</th>
+                            <th>구입수량</th>
+                            <th>제조일자</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="kpn">
+                                KPN<span>3522</span>
+                            </td>
+                            <td>
+                                15.05.30
+                            </td>
+                            <td><strong>10</strong></td>
+                            <td>15.03.31</td>
+                        </tr>
+                        <tr>
+                            <td class="kpn">
+                                KPN<span>3522</span>
+                            </td>
+                            <td>
+                                15.05.30
+                            </td>
+                            <td><strong>10</strong></td>
+                            <td>15.03.31</td>
+                        </tr>
+                        <tr>
+                            <td class="kpn">
+                                KPN<span>3522</span>
+                            </td>
+                            <td>
+                                15.05.30
+                            </td>
+                            <td><strong>10</strong></td>
+                            <td>15.03.31</td>
+                        </tr>
+                        <tr>
+                            <td class="kpn">
+                                KPN<span>3522</span>
+                            </td>
+                            <td>
+                                15.05.30
+                            </td>
+                            <td><strong>10</strong></td>
+                            <td>15.03.31</td>
+                        </tr>
+                        
+
+
+                    </tbody>
+                </table>
+
+                <button class="more"><i class="icon-angle-down"></i>15개 더보기 <span>( 6 / 30 )</span></button>
+                <button class="toTop"><i class="icon-icon-top"></i>최상단으로바로가기</button>
+
+        </section>
+
+        <article class="popup-kpn">
+
+            <div class="outline">
+                <h1>씨수소 상세정보</h1>
+
+                <table class="type01">
+                    <tbody>
+                        <tr>
+                            <th>KPN</th>
+                            <td class="KPN">
+                                KPN<span>802</span>
+                            </td>
+                            <th>생년월일<span>(개월수)</span></th>
+                            <td class="birth">15.10.24 <span>(3년 2개월)</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+                <h2>3대 혈통정보</h2>
+
+                <table class="type02">
+                    <thead>
+                        <tr>
+                            <th colspan="2">구분</th>
+                            <th>아비번호 / 어미개체식별번호</th>
+                            <th>생년월일</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">부계</th>
+                            <td>
+                                부
+                            </td>
+                            <td class="kpn">
+                                KPN<span>3502</span>
+                            </td>
+                            <td>
+                               12.05.14
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                조부
+                            </td>
+                            <td class="kpn">
+                                KPN<span>806</span>
+                            </td>
+                            <td>
+                               09.08.31
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                조모
+                            </td>
+                            <td class="nums">
+                                002 3614 <u>8542</u> 7
+                            </td>
+                            <td>
+                               09.08.31
+                            </td>
+                        </tr>
+
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>모계</th>
+                            <td>
+                                모
+                            </td>
+                            <td class="nums">
+                                002 3614 <u>8542</u> 7
+                            </td>
+                            <td>
+                               12.05.14
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+                <h2>생산형질 유전능력</h2>
+
+                <table class="type02">
+                    <thead>
+                        <tr>
+                            <th>항목</th>
+                            <th>12개월 체중 (kg)</th>
+                            <th>냉동 체중 (kg)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>EPD</strong></td>
+                            <td>24.83</td>
+                            <td>29.75</td>
+                        </tr>
+                    </tbody>
+
+                    <thead>
+                            <tr>
+    
+                                <th>배최장근 단면적 (㎠)</th>
+                                <th>등지방 두께 (mm)</th>
+                                <th>근내 지방도 (점)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>6.27</td>
+                                <td><i>-0.55</i></td>
+                                <td>0.41</td>
+                            </tr>
+                        </tbody>
+                </table>
+
+
+
+
+                <h2>체형 유전능력 <small>cm</small></h2>
+
+                <table class="type02">
+                    <thead>
+                        <tr>
+                            <th>체고</th>
+                            <th>십자부고</th>
+                            <th>체장</th>
+                            <th>흉심</th>
+                            <th>흉폭</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>24.83</td>
+                            <td>24.83</td>
+                            <td>29.75</td>
+                            <td>0.41</td>
+                            <td>0.41</td>
+                        </tr>
+                    </tbody>
+
+                    <thead>
+                            <tr>
+                                <th>요각폭</th>
+                                <th>곤폭</th>
+                                <th>좌골폭</th>
+                                <th>흉위</th>
+                                <th>고장</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>24.83</td>
+                                <td><i>-0.55</i></td>
+                                <td>0.41</td>
+                                <td>0.41</td>
+                                <td>0.41</td>
+                            </tr>
+                        </tbody>
+
+                </table>
+
+
+                <button class="close"><i class="icon-close"></i>닫기</button>
+
+            </div>
+        </article>
+    </div>
+
+</body>
+
+</html>
