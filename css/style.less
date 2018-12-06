@@ -820,6 +820,67 @@ body {
             }
         }
 
+        article.search-nums {
+            .relative;
+            background:#a7a7a7;
+            .rem(padding, 12 74.5 6 16);
+            .zero;
+
+            fieldset {
+                .mapazero;
+                border:none;
+
+
+                input {
+                    .top;
+                    .rem(height, 35);
+                    .rem(font-size, 13);
+                    .rem(padding, 0 10);
+                    .rem(margin, 0 0 6);
+                    width:100%;
+                    border:none;
+                    .ellipse;
+
+                    &[type="date"] {
+                        
+                        background:url("../images/icon-date.png") no-repeat #fff left top / auto 100%;
+                        .rem(height, 30);
+                        .rem(padding, 0 4 0 24);
+                        .remCalcH(width, 10);
+                        appearance: none;
+                        -moz-appearance: none;
+                        -ms-appearance: none;
+                        -webkit-appearance: none;
+                        
+                    }
+
+                }
+
+                span {
+                    .inline-block;
+                    .rem(font-size, 12);
+                    .rem(line-height, 30);
+                    .center;
+                    .rem(width, 20);
+                }
+
+                button {
+                    .absolute;
+                    .rem(right, 16);
+                    .rem(top, 12);
+                    .top;
+                    .rem(font-size, 14);
+                    .rem(height, 71);
+                    .rem(width, 51.5);
+                    .rem(margin-left, 5);
+                    padding:0;
+                    border:none;
+                    .bold;
+                    background:#3d4fc4;
+                    color:#fff;
+                }
+            }
+        }
         section.list-pasture {
             .rem(padding-bottom, 66);
 
@@ -2077,6 +2138,172 @@ body {
                                                 background:#fff;
                                                 border-right:1px solid #707e94;
                                                 border-bottom:1px solid #707e94;
+                                            }
+                                        }
+                                    }
+                                }
+
+                            }
+                        }
+
+                    }
+                }
+            }
+
+
+            button.more {
+                .rem(height, 46);
+                border:1px solid #cecece;
+                background:rgba(255,255,255,0.7);
+                .rem(width, 220);
+                .fixed;
+                left:50%;
+                .rem(margin-left, -110);
+                .rem(bottom, 10);
+                .rem(border-radius, 23);
+                .rem(font-size, 14);
+
+                i {
+                    color:#dbdbdb;
+                    .rem(margin-right, 6);
+                }
+
+                span {
+                    .rem(font-size, 12);
+                    color:#909090;
+                }
+            }
+        }
+
+
+        section.list-nums {
+            .rem(padding-bottom, 66);
+
+            h1 {
+                .rem(font-size, 17);
+                color:#333333;
+                .rem(margin, 0 16);
+                .rem(line-height, 44);
+
+                small {
+                    .rem(font-size, 15);
+                    color:#666666;
+                    .rem(padding, 0 0 0 10);
+                }
+            }
+
+            &>table {
+                
+                border-spacing: none;
+                border-collapse:collapse;
+                border:none;
+                width:100%;
+                line-height:1.4;
+
+                &>thead {
+                    &>tr {
+                        &>th {
+                            .rem(padding, 12.5 3 6.5);
+                            .rem(font-size, 12);
+                            .normal;
+                            white-space:nowrap;
+                            border:none;
+                            border-color:#6f6f6f;
+                            .rem(border-bottom-width, 4);
+                            border-bottom-style:solid;
+
+                            &:last-child {
+                            .rem(padding, 12.5 6 6.5);
+                            }
+
+                            span {
+                                .block;
+                            }
+                        }
+                    }
+                    
+                }
+
+                &>tbody {
+                    &>tr {
+                        border-bottom:1px solid #cdcdcd;
+
+
+                        &>td {
+                            .rem(font-size, 12);
+                            .rem(padding, 20 3);
+                            .center;
+
+                            strong {
+                                color:#444444;
+                            }
+
+
+                            &.nums {
+                                .bold;
+                                .rem(font-size, 12);
+                                color:#444;
+
+                                u {
+                                    .rem(font-size, 15);
+                                    color:#3659c7;
+                                    text-decoration:none;
+                                }
+                            }
+
+                            &.kpn {
+                                .bold;
+                                span {
+                                    .block;
+                                    .rem(font-size, 15);
+                                    color:#217ad4;
+                                }
+                            }
+                        }
+
+
+                        &.open {
+                            background:#7788a4;
+
+                            &>td {
+                                .rem(padding, 6 10);
+                                .relative;
+
+                                &::before {
+                                    content:"";
+                                    .block;
+                                    .absolute;
+                                    left:50%;
+                                    .rem(top, -10);
+                                    .rem(margin-left, -5);
+                                    .rem(width, 0);
+                                    .rem(height, 0);
+                                    border-style:solid;
+                                    .rem(border-width, 5);
+                                    border-color:transparent;
+                                    border-bottom-color:#7788a4;
+                                }
+
+                                dl {
+                                    .left;
+
+                                    dt {
+                                        float:left;
+                                        color:#fff;
+                                        .rem(width, 50);
+                                    }
+
+                                    dd {
+                                        .rem(margin-left, 50);
+
+                                        ul {
+                                            .mapazero;
+                                            .no-list;
+
+                                            li {
+                                                .inline-block;
+                                                .rem(margin-right, 4);
+                                                color:#c5cad6;
                                             }
                                         }
                                     }
