@@ -491,6 +491,40 @@ body {
                     .placeholder(12, #d6d6d6);
                 }
 
+
+
+
+                select {
+                    .top;
+                    .rem(height, 28);
+                    .rem(font-size, 13);
+                    .rem(padding, 0 10 0 25px);
+                    .rem(margin, 7 0 0);
+                    border:none;
+
+                    &.selectbox {
+                        .relative;
+                        .rem(min-width, 72);
+                        background:url("../images/bg-select3.svg") no-repeat #fff left top / auto 100%;
+                        appearance: none;
+                        -moz-appearance: none;
+                        -ms-appearance: none;
+                        -webkit-appearance: none;
+
+                        &::before {
+                            content:"";
+                            .block;
+                            .absolute;
+                            left:0;
+                            top:0;
+                            bottom:0;
+                            background:#7987a2;
+                            .rem(width, 22);
+                        }
+                    }
+                }
+
+
                 button {
                     background:#7788a4;
                     color:#fff;
@@ -501,6 +535,38 @@ body {
                     border:1px solid #757f90;
                     .rem(height, 25);
                     .rem(width, 38);
+                }
+            }
+        }
+
+        div.info-text {
+            border:1px solid #e1e1e1;
+            .rem(font-size, 14);
+            color:#666;
+            .rem(margin, 0 16 10);
+            .rem(padding, 10);
+            .rem(border-radius, 6);
+
+            ul {
+                .mapazero;
+                .no-list;
+
+                li {
+                    .relative;
+                    .rem(line-height, 22);
+                    .rem(padding-left, 10);
+                    word-break:keep-all;
+                    .rem(margin-bottom, 6);
+                    
+                    &:last-child {
+                        margin-bottom:0;
+                    }
+
+                    &::before {
+                        content:"·";
+                        .absolute;
+                        left:0;
+                    }
                 }
             }
         }

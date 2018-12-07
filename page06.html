@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <meta name="format-detection" content="telephone=no">
+    
+    <title>한우-농가관리</title>
+    <link href="css/style.css" rel="stylesheet">
+    <!-- javaScript  -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/common.js"></script>
+
+
+    <!-- 확인용 임시 스크립트, 개발자가 변경 바랍니다. -->
+    <script>
+        $(document).ready(function() {
+
+            $("section.list-pasture tbody tr").on("click", function(){
+                $("article.popup-pasture").toggleClass("show");
+            });
+
+        });
+    </script>
+    <!--//  확인용 임시 스크립트, 개발자가 변경 바랍니다. -->
+
+    
+</head>
+
+<body>
+
+    <div id="content">
+        <article class="search">
+                <h1 class="sr-only">검색</h2>
+
+                    <fieldset>
+                        <legend class="sr-only">검색 입력폼</legend>
+
+
+
+                        <input class="txt" type="text" placeholder="검색어를 입력하세요">
+                        <button>조회</button>
+
+                    </fieldset>
+
+
+
+        </article>
+
+        <section class="list-pasture">
+                <h1 class="sr-only">테이블형 리스트</h1>
+                <div class="counter">
+                    전체<strong>(30)</strong>
+
+                    <fieldset>
+                            <select class="selectbox">
+                                    <option>시군구</option>
+                                </select>
+                                <select class="selectbox">
+                                        <option>읍면동</option>
+                                    </select>
+
+                    </fieldset>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>농장명<span>(농장별식별코드)</span></th>
+                            <th>농장정보<span>(대표자, 관리자, 주소지)</span></th>
+                            <th>관리<span>두수</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h2>홍길동목장<small>215325</small></h2>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>대표자: <strong>홍길동</strong><span>010 0243 3256</span></li>
+                                    <li>관리자: <strong>김영철</strong><span>010 3654 9522</span></li>
+                                    <li>경기도 <span>수원시 팔달구</span></li>
+                                </ul>
+                            </td>
+                            <td>120</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2>홍길동목장<small>215325</small></h2>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>대표자: <strong>홍길동</strong><span>010 0243 3256</span></li>
+                                    <li>관리자: <strong>김영철</strong><span>010 3654 9522</span></li>
+                                    <li>경기도 <span>수원시 팔달구</span></li>
+                                </ul>
+                            </td>
+                            <td>120</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2>홍길동목장<small>215325</small></h2>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>대표자: <strong>홍길동</strong><span>010 0243 3256</span></li>
+                                    <li>관리자: <strong>김영철</strong><span>010 3654 9522</span></li>
+                                    <li>경기도 <span>수원시 팔달구</span></li>
+                                </ul>
+                            </td>
+                            <td>120</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2>홍길동목장<small>215325</small></h2>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>대표자: <strong>홍길동</strong><span>010 0243 3256</span></li>
+                                    <li>관리자: <strong>김영철</strong><span>010 3654 9522</span></li>
+                                    <li>경기도 <span>수원시 팔달구</span></li>
+                                </ul>
+                            </td>
+                            <td>120</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2>홍길동목장<small>215325</small></h2>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>대표자: <strong>홍길동</strong><span>010 0243 3256</span></li>
+                                    <li>관리자: <strong>김영철</strong><span>010 3654 9522</span></li>
+                                    <li>경기도 <span>수원시 팔달구</span></li>
+                                </ul>
+                            </td>
+                            <td>120</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <button class="more"><i class="icon-angle-down"></i>15개 더보기 <span>( 6 / 30 )</span></button>
+                <button class="toTop"><i class="icon-icon-top"></i>최상단으로바로가기</button>
+
+        </section>
+        <article class="popup-pasture">
+
+            <div class="outline">
+                <h1>농가정보</h1>
+
+                <dl>
+                    <dt>농장명<span>(농장식별코드)</span></dt>
+                    <dd>
+                        <h2>홍길동목장<small>215325</small></h2>
+                    </dd>
+                    <dt><label for="name1">대표자</label></dt>
+                    <dd>
+                        <input id="name1" name="name1" type="text" value="홍길동">
+                    </dd>
+                    <dt><label for="tel1">대표자 연락처</label></dt>
+                    <dd>
+                        <input id="tel1" name="tel1" type="text" value="010 0243 3256">
+                    </dd>
+                    <dt><label for="mail1">대표자 이메일</label></dt>
+                    <dd>
+                        <input id="mail1" name="mail1" type="text" class="withSelect" value="">
+                        <select>
+                            <option>선택</option>
+                        </select>
+                    </dd>
+
+                    <dt><label for="name2">관리자</label></dt>
+                    <dd>
+                        <input id="name2" name="name2" type="text" value="홍길동">
+                    </dd>
+                    <dt><label for="tel2">관리자 연락처</label></dt>
+                    <dd>
+                        <input id="tel2" name="tel2" type="text" value="010 0243 3256">
+                    </dd>
+                    <dt><label for="mail2">관리자 이메일</label></dt>
+                    <dd>
+                        <input id="mail2" name="mail2" type="text" class="withSelect" value="">
+                        <select>
+                            <option>선택</option>
+                        </select>
+                    </dd>
+                    <dt>주소지</dt>
+                    <dd>
+                        <span>경기도 수원시 팔달구</span>
+                    </dd>
+
+                </dl>
+
+                <div class="btn-set">
+                    <a class="ok" href="">확인</a>
+                    <a class="modify" href="">수정입력</a>
+                </div>
+
+            </div>
+        </article>
+    </div>
+
+</body>
+
+</html>
