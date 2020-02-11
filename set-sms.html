@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <meta name="format-detection" content="telephone=no">
+    
+    <title>한우-개체정보</title>
+    <link href="css/style.css" rel="stylesheet">
+    <!-- javaScript  -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/common.js"></script>
+
+
+    <!-- 확인용 임시 스크립트, 개발자가 변경 바랍니다. -->
+    <script>
+        $(document).ready(function() {
+
+            $("div.btn-set a.ok").on("click", function(){
+                $("article.popup-object").toggleClass("show");
+            });
+
+
+            $("article.popup-object .close").on("click", function(){
+                $("article.popup-object").toggleClass("show");
+            });
+
+        });
+    </script>
+    <!--//  확인용 임시 스크립트, 개발자가 변경 바랍니다. -->
+
+    
+</head>
+
+<body>
+
+    <div id="content">
+
+
+        <section class="sms-object">
+                <h1 class="blue">문자설정</h1>
+                <div class="info-text">
+                    <ul>
+                        <li>주기 설정은 농가 설정에서 할 수 있습니다.</li>
+                    </ul>
+                    
+                </div>
+                <ul class="check-list">
+
+                    <li>
+                        <h2>인공수정 기록 문자</h2>
+                        <div class="check-box">
+                            <input id="check01" type="checkbox">
+                            <label for="check01">신청
+                                <i class="icon-ok"></i>
+                            </label>
+                        </div>
+                        <p class="information">
+                            인공수정기록 문자알림 서비스
+                        </p>
+                    </li>
+
+                    <li>
+                        <h2>분만후 인공수정 문자</h2>
+                        <div class="check-box">
+                            <div class="select-outline">
+                                <select>
+                                    <option>1일전</option>
+                                </select>
+                            </div>
+                            <input id="check02" type="checkbox">
+                            <label for="check02">신청
+                                <i class="icon-ok"></i>
+                            </label>
+                        </div>
+                        <p class="information">
+                            분만후 20일 인공수정 주기로 설정되어 있습니다.
+                        </p>
+                    </li>
+
+                    <li>
+                        <h2>발정재귀일 문자</h2>
+                        <div class="check-box">
+                            <div class="select-outline">
+                                <select>
+                                    <option>1일전</option>
+                                </select>
+                            </div>
+                            <input id="check03" type="checkbox">
+                            <label for="check03">신청
+                                <i class="icon-ok"></i>
+                            </label>
+                        </div>
+                        <p class="information">
+                            수정후 15일 인공수정 주기로 설정되어 있습니다.
+                        </p>
+                    </li>
+
+                    <li>
+                        <h2>분만 예정일 문자알림</h2>
+                        <div class="check-box">
+                            <div class="select-outline">
+                                <select>
+                                    <option>1일전</option>
+                                </select>
+                            </div>
+                            <input id="check04" type="checkbox">
+                            <label for="check04">신청
+                                <i class="icon-ok"></i>
+                            </label>
+                        </div>
+                        <p class="information">
+                            수정후 285일 인공수정 주기로 설정되어 있습니다.
+                        </p>
+                    </li>
+
+
+
+
+
+                </ul>
+
+                <div class="btn-set">
+                    <a class="ok" href="#">처리</a>
+                </div>
+
+        </section>
+        <article class="popup-object">
+
+            <div class="outline">
+                <h1>농가문자 동의</h1>
+                <div class="info-text pop">
+                    <ul>
+                        <li>농가 문자설정은 대표수정사만 할수 있습니다.</li>
+                        <li>문자 설정에 따라 대표수정사로 문자가 발송 됩니다.</li>
+                        <li>모든 책임은 수정사님에게있습니다.</li>
+                        <li>인공수정기록 문자는 각각의 해당 수정사로부터 문자가 발송됩니다.</li>
+                    </ul>
+                    
+                </div>
+
+                <table class="type01">
+                    <tbody>
+                        <tr>
+                            <th>수정사명</th>
+                            <td>
+                                <input type="text" placeholder="이름을 입력해주세요">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>수정사 전화번호</th>
+                            <td>
+                                <input type="text" placeholder="수정사 전화번호를 입력해주세요">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>농가명</th>
+                            <td>
+                                <input type="text" placeholder="농가명을 입력해주세요">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>농가전화번호</th>
+                            <td class="phone">
+                                <select>
+                                    <option>010</option>
+                                </select>
+                                <input class="phone" type="text" >
+                                <span>-</span>
+                                <input class="phone" type="text" >
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+                <button class="close"><i class="icon-close"></i>닫기</button>
+
+            </div>
+        </article>
+    </div>
+
+</body>
+
+</html>
