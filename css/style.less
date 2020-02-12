@@ -416,6 +416,53 @@ body {
 
     div#content {
 
+        div.agree {
+                
+
+            input[type="checkbox"] {
+                display:none;
+            }
+
+            label {
+                display:inline-block;
+                .rem(font-size, 12px);
+
+                i {
+                    display:inline-block;
+                    position:relative;
+                    .rem(width, 25px);
+                    .rem(height, 25px);
+                    .rem(margin, 0 2px 0 0);
+                    .rem(padding-top, 4px);
+                    border:1px solid #ccc;
+                    border-radius:5px;
+                    text-align:center;
+
+                    &::before {
+                        background:#eee;
+                        border-radius:3px;
+                        color:#eee;
+                        .rem(padding-top, 3px);
+                        .rem(width, 15px);
+                        .rem(height, 13px);
+                    }
+                }
+            }
+
+            input:checked + label {
+                
+
+                i {
+                    background:#3659c7;
+                    border-color:#2344ad;
+
+                    &::before {
+                        background:transparent;
+                        color:#fff;
+                    }
+                }
+            }
+        }
         button.toTop {
             .fixed;
             .rem(right, 10);
@@ -1395,6 +1442,7 @@ body {
             }
 
 
+
             button.more {
                 .rem(height, 46);
                 border:1px solid #cecece;
@@ -1467,42 +1515,46 @@ body {
                         }
 
                         label {
+                            .relative;
+                            .zero;
+                            .ani();
                             display:inline-block;
-                            .rem(font-size, 12px);
+                            vertical-align:top;
+                            border:1px solid #ccc;
+                            .rem(height, 28px);
+                            .rem(width, 50px);
+                            .rem(border-radius, 14px);
+                            background:#ccc;
 
-                            i {
+                            &::after {
+                                content:"";
+                                .ani();
                                 display:inline-block;
-                                position:relative;
-                                .rem(width, 25px);
-                                .rem(height, 25px);
-                                .rem(margin, 0 0 0 1px);
-                                .rem(padding-top, 4px);
-                                border:1px solid #ccc;
-                                border-radius:5px;
-                                text-align:center;
+                                .absolute;
+                                .rem(height, 20px);
+                                .rem(width, 20px);
+                                .rem(left, 3px);
+                                .rem(top, 3px);
+                                border-radius:50%;
+                                background:#fff;
 
-                                &::before {
-                                    background:#eee;
-                                    border-radius:3px;
-                                    color:#eee;
-                                    .rem(padding-top, 3px);
-                                    .rem(width, 15px);
-                                    .rem(height, 13px);
-                                }
                             }
                         }
 
                         input:checked + label {
-                            
+                            background:#3659c7;
 
-                            i {
-                                background:#3659c7;
-                                border-color:#2344ad;
+                            &::after {
+                                content:"";
+                                display:inline-block;
+                                .absolute;
+                                .rem(height, 20px);
+                                .rem(width, 20px);
+                                .rem(left, 24px);
+                                .rem(top, 3px);
+                                border-radius:50%;
+                                background:#fff;
 
-                                &::before {
-                                    background:transparent;
-                                    color:#fff;
-                                }
                             }
                         }
                     }
